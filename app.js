@@ -4,13 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-const { displayApiKey, langChainCode, generateText } = require("./openai/openai");
-console.log(generateText("Sachin Tendulkar"));
+// const { displayApiKey, langChainCode, generateText } = require("./openai/openai");
+// console.log(generateText("Sachin Tendulkar"));
 // const openAi = require("./openai/openai2");
 
 // langchain tuts
 
-// const langChain = require("./langchain/langchain");
+// const langChain = require("./langchain/langchain-examples");
+require("./langchain/chatprompt");
 // const langChainMemory = require("./langchain/memory");
 
 var indexRouter = require('./routes/index');

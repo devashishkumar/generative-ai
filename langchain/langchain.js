@@ -1,5 +1,5 @@
-const { OpenAI } = require("langchain/llms/openai");
-const {PromptTemplate} = require("langchain/prompts");
+const { OpenAI } = require("@langchain/openai");
+const {PromptTemplate} = require("@langchain/core/prompts");
 const {LLMChain} = require("langchain/chains");
 
 require("dotenv").config();
@@ -51,7 +51,7 @@ class LangChainModule {
   }
 }
 
-// const oaM = new LangChainModule();
-// oaM.callMethod("What would be a good company name that makes colurful socks ?");
+const oaM = new LangChainModule();
+oaM.callMethod("What would be a good company name that makes colurful socks ?");
 // oaM.prompt();
 // oaM.llmChainMethod();
